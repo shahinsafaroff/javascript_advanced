@@ -161,3 +161,30 @@
 //     }
 // };
 // console.log(me.getAge());
+
+
+// let obj = { model:'VW Polo'};
+// let otherObj = obj;
+
+// otherObj.model='VolksWagen Polo';
+
+// console.log(obj);
+// console.log(otherObj);
+
+
+let me = { name:'Shahin',};
+
+// let newMe = Object.assign(me, {name: 'Sharaka'}, {surname: 'Shyamalan'});
+
+//let newMe = Object.assign({}, me,{name:'Sharaka', surname:'Shyamalan'});
+
+let newMeWithSpread = {...me, name:'Sharaka', surname: 'Shyamalan'};
+
+//console.log(newMe);
+console.log(me);
+//console.log(me===newMe);
+console.log(newMeWithSpread);
+console.log(me===newMeWithSpread);
+
+
+
